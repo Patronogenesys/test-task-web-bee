@@ -277,8 +277,6 @@ main section {
   height: 20px;
 }
 
-.main_nav-menu--unfolded {
-}
 .nav-menu_header {
   height: 38px;
   display: flex;
@@ -315,8 +313,6 @@ main section {
   width: 24px;
   height: 24px;
 }
-.nav-menu_item-name {
-}
 .nav-menu_item-right {
   display: flex;
   align-items: center;
@@ -340,7 +336,4 @@ main section {
 }
 .nav-menu_item-value--green {
   background: var(--green-color);
-}
-
-.main_posting-menu {
 }
