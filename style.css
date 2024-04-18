@@ -50,6 +50,7 @@ header {
 }
 .header_back-btn {
   margin-right: 8px;
+  border-radius: 3px;
 }
 .header_crumbles {
   font-size: 18px;
@@ -70,8 +71,16 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 16px;
-  height: 48px;
+  height: 100%;
+  padding: 8px;
 }
+
+.header_right-btn:hover,
+.header_back-btn:hover {
+  background-color: var(--grey-color);
+  cursor: pointer;
+}
+
 .header_right-btn-ico {
   width: 24px;
   height: 24px;
@@ -92,6 +101,7 @@ nav {
   display: flex;
 }
 .nav_tab-btn,
+.nav_tab-btn--active,
 .nav_tab-settings-btn {
   display: flex;
   flex-direction: row;
@@ -100,6 +110,17 @@ nav {
   padding: 10px 16px;
   color: var(--black-color);
 }
+
+.nav_tab-btn--active {
+  background-color: var(--grey-color);
+}
+
+.nav_tab-btn:hover,
+.nav_tab-settings-btn:hover {
+  background-color: var(--grey-color);
+  cursor: pointer;
+}
+
 .nav_btn-icon,
 .nav_btn-list-icon {
   width: 20px;
