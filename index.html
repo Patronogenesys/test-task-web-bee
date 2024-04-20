@@ -8,84 +8,88 @@
   </head>
 
   <body>
-    <header>
-      <div class="header_left">
-        <button class="header_back-btn">
+    <header class="nav">
+      <div class="header__left">
+        <button class="header__back-btn">
           <img src="src/header-ico-back.png" alt="" />
         </button>
-        <p class="header_crumbles">
-          User pages <span class="header_crumbles-last">- Profile</span>
+        <p class="header__crumbles">
+          User pages <span class="header__crumbles--last">- Profile</span>
         </p>
       </div>
 
-      <div class="header_right">
-        <button class="header_right-btn">
+      <div class="header__right">
+        <button class="header__right-btn">
           <img
             src="src/header-ico-stat.png"
             alt="Statistics"
-            class="header_right-btn-ico"
+            class="header__right-btn-ico"
           />
-          <span class="header_right-btn-text">Statistics</span>
+          <span class="header__right-btn-text">Statistics</span>
         </button>
-        <button class="header_right-btn">
+        <button class="header__right-btn">
           <img
             src="src/header-ico-invoces.png"
             alt="Invoices"
-            class="header_right-btn-ico"
+            class="header__right-btn-ico"
           />
           <span lass="header_right-btn-text"> Invoices </span>
         </button>
-        <button class="header_right-btn">
+        <button class="header__right-btn">
           <img
             src="src/header-ico-schedule.png"
             alt="Schedule"
-            class="header_right-btn-ico"
+            class="header__right-btn-ico"
           />
-          <span class="header_right-btn-text">Schedule</span>
+          <span class="header__right-btn-text">Schedule</span>
         </button>
       </div>
     </header>
-    <nav>
-      <div class="nav_left">
+    <nav class="nav">
+      <div class="nav__left">
         <a href="index.html">
-          <button class="nav_tab-btn">
+          <button class="nav__tab-btn">
             <img
-              class="nav_btn-icon"
+              class="nav__btn-icon"
               src="src/nav-ico-activity.png"
               alt="Activity"
             />Activity
           </button>
         </a>
         <a href="map.html">
-          <button class="nav_tab-btn">
-            <img class="nav_btn-icon" src="src/nav-ico-map.png" alt="" />Map
+          <button class="nav__tab-btn">
+            <img class="nav__btn-icon" src="src/nav-ico-map.png" alt="" />Map
           </button>
         </a>
         <a href="timer.html">
-          <button class="nav_tab-btn">
-            <img class="nav_btn-icon" src="src/nav-ico-time.png" alt="" />Time
+          <button class="nav__tab-btn">
+            <img class="nav__btn-icon" src="src/nav-ico-time.png" alt="" />Time
           </button>
         </a>
       </div>
 
-      <div class="nav_right">
-        <button class="nav_tab-btn">
-          <img class="nav_btn-icon" src="src/nav-ico-notes.png" alt="" />Notes
+      <div class="nav__right">
+        <button class="nav__tab-btn">
+          <img class="nav__btn-icon" src="src/nav-ico-notes.png" alt="" />Notes
         </button>
-        <button class="nav_tab-btn">
+        <button class="nav__tab-btn">
           <img
-            class="nav_btn-icon"
+            class="nav__btn-icon"
             src="src/nav-ico-friends.png"
             alt=""
           />Friends
         </button>
-        <button class="nav_tab-btn">
-          <img class="nav_btn-icon" src="src/nav-ico-photos.png" alt="" />Photos
-        </button>
-        <button class="nav_tab-settings-btn">
-          <img class="nav_btn-icon" src="src/nav-ico-settings.png" alt="" />
+        <button class="nav__tab-btn">
           <img
-            class="nav_btn-list-icon"
+            class="nav__btn-icon"
+            src="src/nav-ico-photos.png"
+            alt=""
+          />Photos
+        </button>
+        <button class="nav__tab-settings-btn">
+          <img class="nav__btn-icon" src="src/nav-ico-settings.png" alt="" />
+          <img
+            class="nav__btn-list-icon"
             src="src/nav-ico-settings-arrow.png"
             alt=""
           />
@@ -94,24 +98,30 @@
     </nav>
 
     <main>
-      <div class="main_posts">
-        <section class="posts_post">
-          <div class="post_header"></div>
-          <img src="src/post-image1.png" alt="Post Image" class="post_image" />
-          <div class="post_comments">
-            <div class="comments_comment">
-              <div class="comment_header">
+      <div class="main__posts">
+        <section class="main__post">
+          <div class="main__post-header"></div>
+          <img
+            src="src/post-image1.png"
+            alt="Post Image"
+            class="main__post-image"
+          />
+          <div class="main__post-comments">
+            <div class="main__comment">
+              <div class="main__comment-header">
                 <img
-                  class="comment_ico"
+                  class="main__comment-ico"
                   src="src/ico-comment.png"
                   alt="Comment"
                 />
-                <p class="comment_author">
-                  <a class="comment_author-link" href="">Jason Anderson</a>
+                <p class="main__comment-author">
+                  <a class="main__comment-author-link" href=""
+                    >Jason Anderson</a
+                  >
                   commented:
                 </p>
               </div>
-              <div class="comment_content">
+              <div class="main__comment-content">
                 <p class="comment_text">
                   Don’t sit and wait. Get out there, feel life. Touch the sun,
                   and immerse in the sea. Keep love in your heart. A life
@@ -119,20 +129,20 @@
                   Because summer is passion, memories, light breeze, the sun
                   that appears on the skin and caresses the face.
                 </p>
-                <p class="comment_signature">– Jason, 10:30 am</p>
+                <p class="main__comment-signature">– Jason, 10:30 am</p>
               </div>
-              <div class="comment_stats">
-                <div class="comment_stats-left-wrap">
-                  <button class="comment_stats-views">
+              <div class="main__comment-stats">
+                <div class="main__comment-stats-left-wrap">
+                  <button class="main__comment-stats-views">
                     <img
-                      class="comment_stats-ico"
+                      class="main__comment-stats-ico"
                       src="src/ico-views.png"
                       alt=""
                     />432
                   </button>
-                  <button class="comment_stats-comments">
+                  <button class="main__comment-stats-comments">
                     <img
-                      class="comment_stats-ico"
+                      class="main__comment-stats-ico"
                       src="src/ico-comment.png"
                       alt=""
                     />47
@@ -142,167 +152,167 @@
             </div>
           </div>
         </section>
-        <section class="posts_post--folded">
-          <div class="post_header">
+        <section class="main__post--folded">
+          <div class="main__post-header">
             <p class="post_header-text">Sunset Sunset Sunset</p>
-            <div class="post_header-right-wrap">
+            <div class="main__post-header-right-wrap">
               <img
                 src="src/nav-ico-time.png"
                 alt="Posted"
-                class="post_header-time-ico"
+                class="main__post-header-time-ico"
               />
-              <p class="post_header-time">53 minutes ago</p>
-              <button class="post_header-unfold">
+              <p class="main__post-header-time">53 minutes ago</p>
+              <button class="main__post-header-unfold">
                 <img
                   src="src/post-ico-unfold.png"
                   alt="More..."
-                  class="post_header-unfold-ico"
+                  class="main__post-header-unfold-ico"
                 />
               </button>
             </div>
           </div>
         </section>
-        <section class="posts_post--folded">
-          <div class="post_header">
+        <section class="main__post--folded">
+          <div class="main__post-header">
             <p class="post_header-text">Morning of Siberia</p>
-            <div class="post_header-right-wrap">
+            <div class="main__post-header-right-wrap">
               <img
                 src="src/nav-ico-time.png"
                 alt="Posted"
-                class="post_header-time-ico"
+                class="main__post-header-time-ico"
               />
-              <p class="post_header-time">56 minutes ago</p>
-              <button class="post_header-unfold">
+              <p class="main__post-header-time">56 minutes ago</p>
+              <button class="main__post-header-unfold">
                 <img
                   src="src/post-ico-unfold.png"
                   alt="More..."
-                  class="post_header-unfold-ico"
+                  class="main__post-header-unfold-ico"
                 />
               </button>
             </div>
           </div>
         </section>
       </div>
-      <div class="main_right">
-        <section class="main_profile-card">
-          <div class="profile-card_photo"></div>
-          <div class="profile-card_text">
-            <p class="profile-card_name">Hanna Dorman</p>
-            <p class="profile-card_job">UX/UI designer</p>
+      <div class="main__right">
+        <section class="main__profile-card">
+          <div class="main__profile-card-photo"></div>
+          <div class="main__profile-card-text">
+            <p class="main__profile-card-name">Hanna Dorman</p>
+            <p class="main__profile-card-job">UX/UI designer</p>
           </div>
-          <div class="profile-card_contacts">
-            <a href="" class="profile-card_link">
+          <div class="main__profile-card-contacts">
+            <a href="" class="main__profile-card-link">
               <img
                 src="src/ico-telegram.png"
                 alt="Trelegram"
-                class="profile-card_link-ico"
+                class="main__profile-card-link-ico"
               />
             </a>
-            <a href="" class="profile-card_link">
+            <a href="" class="main__profile-card-link">
               <img
                 src="src/ico-hh.png"
                 alt="hh.ru"
-                class="profile-card_link-ico"
+                class="main__profile-card-link-ico"
               />
             </a>
-            <a href="" class="profile-card_link">
+            <a href="" class="main__profile-card-link">
               <img
                 src="src/ico-twitter.png"
                 alt="Twitter"
-                class="profile-card_link-ico"
+                class="main__profile-card-link-ico"
               />
             </a>
           </div>
         </section>
         <section class="main_nav-menu--unfolded">
-          <div class="nav-menu_header">
-            <p class="nav-menu_header-text">Navigation</p>
+          <div class="side-nav__header">
+            <p class="side-nav__header-text">Navigation</p>
             <img
-              class="nav-menu_header-arrow"
+              class="side-nav__header-arrow"
               src="src/nav-menu-arrow.png"
               alt="Fold/Unfold"
             />
           </div>
-          <div class="nav-menu_section">
-            <div class="nav-menu_item">
-              <div class="nav-menu_item-left">
+          <div class="side-nav__section">
+            <div class="side-nav__item">
+              <div class="side-nav__item-left">
                 <img
-                  class="nav-menu_item-ico"
+                  class="side-nav__item-ico"
                   src="src/nav-menu-ico-profile.png"
                   alt="Profile"
                 />
-                <p class="nav-menu_item-name">My profile</p>
+                <p class="side-nav__item-name">My profile</p>
               </div>
-              <div class="nav-menu_item-right">
-                <p class="nav-menu_item-value"></p>
+              <div class="side-nav__item-right">
+                <p class="side-nav__item-value"></p>
               </div>
             </div>
-            <div class="nav-menu_item">
-              <div class="nav-menu_item-left">
+            <div class="side-nav__item">
+              <div class="side-nav__item-left">
                 <img
-                  class="nav-menu_item-ico"
+                  class="side-nav__item-ico"
                   src="src/nav-menu-ico-balance.png"
                   alt="Balance"
                 />
-                <span class="nav-menu_item-name">Balance</span>
+                <span class="side-nav__item-name">Balance</span>
               </div>
-              <div class="nav-menu_item-right">
-                <p class="nav-menu_item-value--gery">$ 1,430</p>
+              <div class="side-nav__item-right">
+                <p class="side-nav__item-value--grey">$ 1,430</p>
               </div>
             </div>
-            <div class="nav-menu_item">
-              <div class="nav-menu_item-left">
+            <div class="side-nav__item">
+              <div class="side-nav__item-left">
                 <img
-                  class="nav-menu_item-ico"
+                  class="side-nav__item-ico"
                   src="src/nav-menu-ico-connections.png"
                   alt="Connections"
                 />
-                <p class="nav-menu_item-name">Connections</p>
+                <p class="side-nav__item-name">Connections</p>
               </div>
-              <div class="nav-menu_item-right">
-                <p class="nav-menu_item-value--red">29</p>
+              <div class="side-nav__item-right">
+                <p class="side-nav__item-value--red">29</p>
               </div>
             </div>
-            <div class="nav-menu_item">
-              <div class="nav-menu_item-left">
+            <div class="side-nav__item">
+              <div class="side-nav__item-left">
                 <img
-                  class="nav-menu_item-ico"
+                  class="side-nav__item-ico"
                   src="src/nav-menu-ico-friends.png"
                   alt="Friends"
                 />
-                <p class="nav-menu_item-name">Friends</p>
+                <p class="side-nav__item-name">Friends</p>
               </div>
-              <div class="nav-menu_item-right">
-                <p class="nav-menu_item-value"></p>
+              <div class="side-nav__item-right">
+                <p class="side-nav__item-value"></p>
               </div>
             </div>
           </div>
 
-          <div class="nav-menu_section">
-            <div class="nav-menu_item">
-              <div class="nav-menu_item-left">
+          <div class="side-nav__section">
+            <div class="side-nav__item">
+              <div class="side-nav__item-left">
                 <img
-                  class="nav-menu_item-ico"
+                  class="side-nav__item-ico"
                   src="src/nav-menu-ico-events.png"
                   alt="Events"
                 />
-                <p class="nav-menu_item-name">Events</p>
+                <p class="side-nav__item-name">Events</p>
               </div>
-              <div class="nav-menu_item-right">
-                <p class="nav-menu_item-value--green">45</p>
+              <div class="side-nav__item-right">
+                <p class="side-nav__item-value--green">45</p>
               </div>
             </div>
-            <div class="nav-menu_item">
-              <div class="nav-menu_item-left">
+            <div class="side-nav__item">
+              <div class="side-nav__item-left">
                 <img
-                  class="nav-menu_item-ico"
+                  class="side-nav__item-ico"
                   src="src/nav-menu-ico-settings.png"
                   alt="Settings"
                 />
-                <p class="nav-menu_item-name">Account settings</p>
+                <p class="side-nav__item-name">Account settings</p>
               </div>
-              <div class="nav-menu_item-right">
-                <p class="nav-menu_item-value"></p>
+              <div class="side-nav__item-right">
+                <p class="side-nav__item-value"></p>
               </div>
             </div>
           </div>
