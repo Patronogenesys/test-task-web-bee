@@ -24024,7 +24024,7 @@ nav {
 }
 
 .nav__tab-btn,
-nav__tab-btn--active,
+.nav__tab-btn--active,
 .nav__tab-settings-btn {
   display: flex;
   flex-direction: row;
