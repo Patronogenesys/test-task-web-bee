@@ -1,0 +1,374 @@
+@import "custom-variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Mixins
+@mixin btn-hover-effect {
+  &:hover {
+    background-color: $grey-color;
+    cursor: pointer;
+  }
+}
+
+body {
+  background-color: $bg-color;
+  color: $black-color;
+}
+
+button {
+  color: inherit;
+  background-color: inherit;
+  border: 0;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $blue-color;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  background-color: $white-color;
+  text-align: center;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 32px;
+  }
+
+  &__back-btn {
+    margin-right: 8px;
+    border-radius: 3px;
+    @include btn-hover-effect;
+  }
+
+  &__crumbles {
+    font-size: 18px;
+    font-weight: 500;
+
+    &--last {
+      font-weight: 400;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 32px;
+  }
+
+  &__right-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+    height: 100%;
+    padding: 8px;
+    @include btn-hover-effect;
+
+    &-ico {
+      width: 24px;
+      height: 24px;
+      object-fit: cover;
+    }
+  }
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 32px;
+  background-color: $bg2-color;
+  text-align: center;
+  border: 1px solid $grey-color;
+
+  &__left {
+    display: flex;
+  }
+
+  &__tab-btn,
+  &__tab-btn--active,
+  &__tab-settings-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    padding: 10px 16px;
+    color: $black-color;
+    @include btn-hover-effect;
+  }
+
+  &__tab-btn--active {
+    background-color: $grey-color;
+  }
+
+  &__btn-icon,
+  &__btn-list-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  &__right {
+    display: flex;
+  }
+}
+
+/* Main */
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 32px;
+
+  &__posts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__post,
+  &__post--folded {
+    padding: 0 32px;
+  }
+
+  &__post {
+    @extend .main__post--folded;
+    padding-bottom: 32px;
+  }
+
+  &__post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  &__post-image {
+    width: 100%;
+    object-fit: fill;
+  }
+
+  &__post-comments {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 16px 0;
+  }
+
+  &__comment {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__comment-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__comment-ico {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__comment-author-link {
+    color: $blue-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__comment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 8px;
+    border-left: $grey-color 2px solid;
+  }
+
+  &__comment-signature {
+    color: $second-tx-color;
+  }
+
+  &__comment-stats-left-wrap {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__comment-stats-comments,
+  &__comment-stats-views {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+  }
+
+  &__comment-stats-ico {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__post-header-right-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__post-header-time-ico {
+    margin-right: -8px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__post-header-unfold {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__post-header-unfold-ico {
+    width: inherit;
+    height: inherit;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 264px;
+    height: 296px;
+    padding: 32px 0;
+  }
+
+  &__profile-card-photo {
+    width: 132px;
+    min-height: 132px;
+    border-radius: 100%;
+    background-image: url("/../src/prifile-photo.jpeg");
+    background-position: 50% 0%;
+    background-size: 120%;
+  }
+
+  &__profile-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__profile-card-name {
+    font-size: 18px;
+  }
+
+  &__profile-card-job {
+    color: $second-tx-color;
+  }
+
+  &__profile-card-contacts {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__profile-card-link-ico {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+/* Side Navigation Menu */
+.side-nav {
+  &__header {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  &__header-text {
+    font-weight: 500;
+  }
+
+  &__header-arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+    border-top: $grey-color 1px solid;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  &__item-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__item-ico {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__item-right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-value {
+    padding: 1px 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: $white-color;
+    &--grey {
+      @extend .side-nav__item-value;
+      padding: 0;
+      background: none;
+      color: $second-tx-color;
+    }
+  
+    &--red {
+      @extend .side-nav__item-value;
+      background: $red-color;
+    }
+  
+    &--green {
+      @extend .side-nav__item-value;
+      background: $green-color;
+    }
+  }
+
+
+}

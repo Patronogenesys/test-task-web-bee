@@ -1,0 +1,54 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$paragraph-margin-bottom: 0;
+
+// COLORS
+
+// :root {
+//   --blue-color: #5095ec;
+//   --black-color: #505050;
+//   --second-tx-color: #8f8f8f;
+//   --grey-color: #d3d8de;
+//   --bg-color: #f1f1f1;
+//   --white-color: #ffffff;
+//   --bg2-color: #fafafa;
+//   --green-color: #47b091;
+//   --red-color: #e33939;
+// }
+
+$blue-color: #5095ec;
+$black-color: #505050;
+$second-tx-color: #8f8f8f;
+$grey-color: #d3d8de;
+$bg-color: #f1f1f1;
+$white-color: #ffffff;
+$bg2-color: #fafafa;
+$green-color: #47b091;
+$red-color: #e33939;
+
+// Bootstrap
+$primary: $blue-color;
+$secondary: $black-color;
+$success: $green-color;
+$danger: $red-color;
+$light: $bg-color;
+$dark: $black-color;
+
+// Дополнительные переменные
+$body-bg: $bg-color;
+$text-muted: $second-tx-color;
+
+// FONTS
+
+$font-family-base: "Roboto", sans-serif;
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+
+// Bootstrap
+$font-size-base: $font-size-14;
+$font-size-sm: $font-size-12;
+$font-size-lg: $font-size-16;
+$font-size-xl: $font-size-18;
