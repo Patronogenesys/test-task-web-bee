@@ -103,7 +103,7 @@ a {
     flex-direction: row;
     align-items: center;
     height: 100%;
-    padding: 10px 16px;
+    padding: 9px 16px;
     color: $black-color;
     @include btn-hover-effect;
   }
@@ -130,6 +130,10 @@ a {
   justify-content: space-between;
   gap: 32px;
   padding: 32px;
+
+  &__section {
+    background-color: $white-color;
+  }
 
   &__posts {
     display: flex;
@@ -214,7 +218,7 @@ a {
   &__comment-stats-views {
     display: flex;
     align-items: center;
-    gap: 8px; 
+    gap: 8px;
   }
 
   &__comment-stats-ico {
@@ -296,7 +300,6 @@ a {
   }
 }
 
-
 /* Side Navigation Menu */
 .side-nav {
   &__header {
@@ -358,17 +361,15 @@ a {
       background: none;
       color: $second-tx-color;
     }
-  
+
     &--red {
       @extend .side-nav__item-value;
       background: $red-color;
     }
-  
+
     &--green {
       @extend .side-nav__item-value;
       background: $green-color;
     }
   }
-
-
 }

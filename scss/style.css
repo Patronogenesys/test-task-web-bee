@@ -23949,42 +23949,41 @@ a {
   color: #5095ec;
 }
 
-header {
+/* Header */
+.header {
   display: flex;
   justify-content: space-between;
   height: 64px;
   background-color: #ffffff;
   text-align: center;
 }
-
 .header__left {
   display: flex;
   align-items: center;
   height: 100%;
   margin-left: 32px;
 }
-
 .header__back-btn {
   margin-right: 8px;
   border-radius: 3px;
 }
-
+.header__back-btn:hover {
+  background-color: #d3d8de;
+  cursor: pointer;
+}
 .header__crumbles {
   font-size: 18px;
   font-weight: 500;
 }
-
 .header__crumbles--last {
   font-weight: 400;
 }
-
 .header__right {
   display: flex;
   align-items: center;
   height: 100%;
   margin-right: 32px;
 }
-
 .header__right-btn {
   display: flex;
   flex-direction: column;
@@ -23994,13 +23993,10 @@ header {
   height: 100%;
   padding: 8px;
 }
-
-.header__right-btn:hover,
-.header__back-btn:hover {
+.header__right-btn:hover {
   background-color: #d3d8de;
   cursor: pointer;
 }
-
 .header__right-btn-ico {
   width: 24px;
   height: 24px;
@@ -24008,7 +24004,8 @@ header {
      object-fit: cover;
 }
 
-nav {
+/* Navigation */
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24018,69 +24015,54 @@ nav {
   text-align: center;
   border: 1px solid #d3d8de;
 }
-
 .nav__left {
   display: flex;
 }
-
-.nav__tab-btn,
-.nav__tab-btn--active,
-.nav__tab-settings-btn {
+.nav__tab-btn, .nav__tab-btn--active, .nav__tab-settings-btn {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 100%;
-  padding: 10px 16px;
+  padding: 9px 16px;
   color: #505050;
 }
-
-nav__tab-btn--active {
-  background-color: #d3d8de;
-}
-
-.nav__tab-btn:hover,
-.nav__tab-settings-btn:hover {
+.nav__tab-btn:hover, .nav__tab-btn--active:hover, .nav__tab-settings-btn:hover {
   background-color: #d3d8de;
   cursor: pointer;
 }
-
-.nav__btn-icon,
-.nav__btn-list-icon {
+.nav__tab-btn--active {
+  background-color: #d3d8de;
+}
+.nav__btn-icon, .nav__btn-list-icon {
   width: 20px;
   height: 20px;
   margin-right: 8px;
 }
-
 .nav__right {
   display: flex;
 }
 
-main {
+/* Main */
+.main {
   display: flex;
   justify-content: space-between;
   gap: 32px;
   padding: 32px;
 }
-
-main section {
+.main__section {
   background-color: #ffffff;
 }
-
 .main__posts {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-
-.main__post,
-.main__post--folded {
+.main__post, .main__post--folded {
   padding: 0 32px;
 }
-
 .main__post {
   padding-bottom: 32px;
 }
-
 .main__post-header {
   display: flex;
   justify-content: space-between;
@@ -24088,46 +24070,38 @@ main section {
   height: 56px;
   font-size: 16px;
 }
-
 .main__post-image {
   width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
 }
-
 .main__post-comments {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin: 16px 0;
 }
-
 .main__comment {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-
 .main__comment-header {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-
 .main__comment-ico {
   width: 24px;
   height: 24px;
 }
-
 .main__comment-author-link {
   color: #5095ec;
   text-decoration: none;
 }
-
 .main__comment-author-link:hover {
   text-decoration: underline;
 }
-
 .main__comment-content {
   display: flex;
   flex-direction: column;
@@ -24135,56 +24109,45 @@ main section {
   padding-left: 8px;
   border-left: #d3d8de 2px solid;
 }
-
 .main__comment-signature {
   color: #8f8f8f;
 }
-
 .main__comment-stats-left-wrap {
   display: flex;
   gap: 32px;
 }
-
-.main__comment-stats-comments,
-.main__comment-stats-views {
+.main__comment-stats-comments, .main__comment-stats-views {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
 .main__comment-stats-ico {
   width: 24px;
   height: 24px;
 }
-
 .main__post-header-right-wrap {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-
 .main__post-header-time-ico {
   margin-right: -8px;
   width: 24px;
   height: 24px;
 }
-
 .main__post-header-unfold {
   width: 24px;
   height: 24px;
 }
-
 .main__post-header-unfold-ico {
   width: inherit;
   height: inherit;
 }
-
 .main__right {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-
 .main__profile-card {
   display: flex;
   flex-direction: column;
@@ -24195,7 +24158,6 @@ main section {
   height: 296px;
   padding: 32px 0;
 }
-
 .main__profile-card-photo {
   width: 132px;
   min-height: 132px;
@@ -24204,32 +24166,28 @@ main section {
   background-position: 50% 0%;
   background-size: 120%;
 }
-
 .main__profile-card-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
-
 .main__profile-card-name {
   font-size: 18px;
 }
-
 .main__profile-card-job {
   color: #8f8f8f;
 }
-
 .main__profile-card-contacts {
   display: flex;
   gap: 8px;
 }
-
 .main__profile-card-link-ico {
   width: 20px;
   height: 20px;
 }
 
+/* Side Navigation Menu */
 .side-nav__header {
   height: 38px;
   display: flex;
@@ -24237,16 +24195,13 @@ main section {
   justify-content: space-between;
   padding: 0 16px;
 }
-
 .side-nav__header-text {
   font-weight: 500;
 }
-
 .side-nav__header-arrow {
   width: 20px;
   height: 20px;
 }
-
 .side-nav__section {
   display: flex;
   flex-direction: column;
@@ -24254,50 +24209,39 @@ main section {
   padding: 16px 0;
   border-top: #d3d8de 1px solid;
 }
-
 .side-nav__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
 }
-
 .side-nav__item-left {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-
 .side-nav__item-ico {
   width: 24px;
   height: 24px;
 }
-
 .side-nav__item-right {
   display: flex;
   align-items: center;
 }
-
-.side-nav__item-value,
-.side-nav__item-value--grey,
-.side-nav__item-value--red,
-.side-nav__item-value--green {
+.side-nav__item-value, .side-nav__item-value--green, .side-nav__item-value--red, .side-nav__item-value--grey {
   padding: 1px 5px;
   border-radius: 10px;
   font-size: 12px;
   color: #ffffff;
 }
-
 .side-nav__item-value--grey {
   padding: 0;
   background: none;
   color: #8f8f8f;
 }
-
 .side-nav__item-value--red {
   background: #e33939;
 }
-
 .side-nav__item-value--green {
   background: #47b091;
 }/*# sourceMappingURL=style.css.map */
